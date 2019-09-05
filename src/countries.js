@@ -323,6 +323,87 @@ export default [{
         id:"gn",
         color:"red",
     },
+    {
+        name:"Indie",
+        id:"in",
+        color:"green-yellow",
+    },
+    {
+        name:"Indonesia",
+        id:"id",
+        color:"green-yellow",
+    },
+    {
+        name:"Japan",
+        id:"jp",
+        color:"green",
+    },
+    {
+        name:"Jordania",
+        id:"jo",
+        color:"green",
+    },
+    {
+        name:"Korea południowa",
+        id:"kr",
+        color:"green",
+    },
+    {
+        name:"Laos",
+        id:"la",
+        color:"yellow",
+    },
+    {
+        name:"Malaysia",
+        id:"my",
+        color:"yellow",
+    },
+    {
+        name:"Myanmar",
+        id:"mm",
+        color:"green-yellow",
+    },
+    {
+        name:"Nepal",
+        id:"np",
+        color:"green-yellow",
+    },
+    {
+        name:"Philippines",
+        id:"ph",
+        color:"green",
+    },
+    {
+        name:"Singapore",
+        id:"sg",
+        color:"green",
+    },
+    {
+        name:"Sri Lanka",
+        id:"lk",
+        color:"green",
+    },
+    {
+        name:"Taiwan",
+        id:"tw",
+        color:"yellow",
+    },
+    {
+        name:"Tajlandia",
+        id:"th",
+        color:"green",
+    },
+    {
+        name:"Turcja",
+        id:"tr",
+        color:"green",
+    },
+    {
+        name:"Wietnam",
+        id:"vn",
+        color:"green-yellow",
+    },
+    
     
     
     
