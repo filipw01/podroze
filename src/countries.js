@@ -203,6 +203,131 @@ export default [{
         id:"km",
         color:"yellow",
     },
+    {
+        name:"Costa Rica",
+        id:"cr",
+        color:"green-yellow",
+    },
+    {
+        name:"Chorwacja",
+        id:"hr",
+        color:"green",
+    },
+    {
+        name:"Cuba",
+        id:"cu",
+        color:"green",
+    },
+    {
+        name:"Cypr",
+        id:"cy",
+        color:"yellow",
+    },
+    {
+        name:"Chechy",
+        id:"cz",
+        color:"yellow",
+    },
+    {
+        name:"Dania",
+        id:"dk",
+        color:"green-yellow",
+    },
+    {
+        name:"Dominica",
+        id:"dm",
+        color:"green-yellow",
+    },
+    {
+        name:"Ecuador",
+        id:"ec",
+        color:"yellow",
+    },
+    {
+        name:"Egipt",
+        id:"eg",
+        color:"green",
+    },
+    {
+        name:"Eritrea",
+        id:"er",
+        color:"red",
+    },
+    {
+        name:"Estonia",
+        id:"ee",
+        color:"yellow",
+    },
+    {
+        name:"Etiopia",
+        id:"et",
+        color:"red",
+    },
+    {
+        name:"Fiji",
+        id:"fj",
+        color:"green",
+    },
+    {
+        name:"Finlandia",
+        id:"fi",
+        color:"yellow",
+    },
+    {
+        name:"Francja",
+        id:"fr",
+        color:"green",
+    },
+    {
+        name:"French Guinea",
+        id:"gf",
+        color:"red",
+    },
+    {
+        name:"Gabon",
+        id:"ga",
+        color:"red",
+    },
+    {
+        name:"Gruzja",
+        id:"ge",
+        color:"green-yellow",
+    },
+    {
+        name:"Niemcy",
+        id:"de",
+        color:"green-yellow",
+    },
+    {
+        name:"Ghana",
+        id:"gh",
+        color:"red",
+    },
+    {
+        name:"Grecja",
+        id:"gr",
+        color:"green",
+    },
+    {
+        name:"Grenada",
+        id:"gd",
+        color:"green-yellow",
+    },
+    {
+        name:"Guatemala",
+        id:"gt",
+        color:"yellow",
+    },
+    {
+        name:"Gwinea",
+        id:"gn",
+        color:"red",
+    },
+    
+    
+    
+    
+    
     
     
     
