@@ -18,6 +18,9 @@ function translateColorToRGB(color) {
 }
 
 function App() {
+  const sortedAndFilteredCountries = countries
+    .filter(({ color }) => color !== "red")
+    .sort((a, b) => a.name.localeCompare(b.name));
   const [selectedCountryId, setSelectedCountryId] = useState("");
   const [selectedCountry, setSelectedCountry] = useState();
   useEffect(() => {
@@ -42,11 +45,11 @@ function App() {
         if (tempNode.id === "ocean") return setSelectedCountryId("ocean");
         tempNode = tempNode.parentElement;
       }
+      tempNode.focus();
+      setSelectedCountryId(tempNode.id);
     } catch (e) {
       console.error(e);
     }
-    tempNode.focus();
-    setSelectedCountryId(tempNode.id);
   }
   return (
     <div>
@@ -59,8 +62,8 @@ function App() {
         ""
       )}
       <div className="countries-list">
-        {countries.map(({ name, id }) => {
-          return <p onClick={() => setSelectedCountryId(id)}>{name}</p>;
+        {sortedAndFilteredCountries.map(({ name, id }) => {
+          return <p key={id} onClick={() => setSelectedCountryId(id)}>{name}</p>;
         })}
       </div>
     </div>
