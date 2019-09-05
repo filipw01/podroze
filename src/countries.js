@@ -9,11 +9,6 @@ export default [{
         color: 'red'
     },
     {
-        name: "Wyspy Alandzkie",
-        id: "ax",
-        color: 'yellow'
-    },
-    {
         name: "Albania",
         id: "al",
         color: 'yellow'
@@ -148,6 +143,69 @@ export default [{
         id:"ba",
         color:"yellow",
     },
+    {
+        name:"Botswana",
+        id:"bw",
+        color:"red",
+    },
+    {
+        name:"Brazylia",
+        id:"br",
+        color:"green-yellow",
+    },
+    {
+        name:"Bułgaria",
+        id:"bg",
+        color:"green-yellow",
+    },
+    {
+        name:"Cape Verde",
+        id:"cv",
+        color:"green-yellow",
+    },
+    {
+        name:"Cambodia",
+        id:"kh",
+        color:"green",
+    },
+    {
+        name:"Cameroon",
+        id:"cm",
+        color:"red",
+    },
+    {
+        name:"Kanada",
+        id:"ca",
+        color:"green",
+    },
+    {
+        name:"Chad",
+        id:"td",
+        color:"red",
+    },
+    {
+        name:"Chile",
+        id:"cl",
+        color:"green-yellow",
+    },
+    {
+        name:"Chiny",
+        id:"cn",
+        color:"green",
+    },
+    {
+        name:"Kolumbia",
+        id:"co",
+        color:"yellow",
+    },
+    {
+        name:"Comoros",
+        id:"km",
+        color:"yellow",
+    },
+    
+    
+    
     
 
 ];
