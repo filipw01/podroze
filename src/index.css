@@ -1,4 +1,5 @@
 body {
+  font-family: sans-serif;
   margin: 0;
   background-color: rgb(188, 233, 247);
   -webkit-font-smoothing: antialiased;
@@ -7,9 +8,6 @@ body {
 
 .interactive-map{
   width: 100vw;
-  stroke: rgb(150, 150, 150);
-  fill: rgb(247, 246, 188)
-}
-.hover{
-  fill: rgb(198, 245, 155);
+  stroke: rgb(255, 255, 255);
+  fill: rgb(245, 155, 155);
 }
