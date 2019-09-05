@@ -8,7 +8,7 @@ body {
 
 .interactive-map {
   width: 100vw;
-  stroke: rgb(255, 255, 255);
+  stroke: #5f5f5f;
   fill: rgb(245, 155, 155);
 }
 .interactive-map *:focus {
