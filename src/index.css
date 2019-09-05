@@ -6,8 +6,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.interactive-map{
+.interactive-map {
   width: 100vw;
   stroke: rgb(255, 255, 255);
   fill: rgb(245, 155, 155);
+}
+.interactive-map *:focus {
+  outline: none;
+  fill: rgb(44, 111, 255) !important;
+}
+.country-details{
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: white;
+  display: flex;
+  max-width: 700px;
+}
+.countries-list{
+  padding: 20px 40px;
+  border-radius: 10px;
+  margin: 20px auto;
+  background-color: white;
+  max-width: 300px;
+}
+.countries-list p{
+  cursor: pointer;
 }

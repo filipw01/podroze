@@ -2,18 +2,18 @@ import React, { useEffect, useState } from "react";
 import Map from "./Map";
 import countries from "./countries";
 
-function translateColorToRGB(color){
-  if(color==="green"){
-    return "rgb(198, 245, 155)"
+function translateColorToRGB(color) {
+  if (color === "green") {
+    return "rgb(198, 245, 155)";
   }
-  if(color==="yellow"){
-    return "rgb(255, 249, 121)"
+  if (color === "yellow") {
+    return "rgb(255, 249, 121)";
   }
-  if(color==="green-yellow"){
-    return "rgb(235, 247, 167)"
+  if (color === "green-yellow") {
+    return "rgb(235, 247, 167)";
   }
-  if(color==="red"){
-    return "rgb(245, 155, 155)"
+  if (color === "red") {
+    return "rgb(245, 155, 155)";
   }
 }
 
@@ -23,10 +23,8 @@ function App() {
   useEffect(() => {
     for (const country of countries) {
       const countryNode = document.getElementById(country.id);
+      countryNode.tabIndex = 1;
       countryNode.style.fill = translateColorToRGB(country.color);
-      countryNode.addEventListener("click", () => {
-        setSelectedCountryId(country.id);
-      });
     }
   }, []);
   useEffect(() => {
@@ -34,13 +32,37 @@ function App() {
       setSelectedCountry(
         countries.filter(({ id }) => id === selectedCountryId)[0]
       );
+      document.getElementById(selectedCountryId).focus();
     }
   }, [selectedCountryId]);
-  console.log(selectedCountry);
+  function setCountry(e) {
+    let tempNode = e.target;
+    try {
+      while (tempNode.id.length !== 2) {
+        if (tempNode.id === "ocean") return setSelectedCountryId("ocean");
+        tempNode = tempNode.parentElement;
+      }
+    } catch (e) {
+      console.error(e);
+    }
+    tempNode.focus();
+    setSelectedCountryId(tempNode.id);
+  }
   return (
     <div>
-      <Map />
-      {selectedCountry ? <div>{selectedCountry.name}</div> : ""}
+      <div onClick={setCountry}>
+        <Map />
+      </div>
+      {selectedCountry ? (
+        <div className="country-details">{selectedCountry.name}</div>
+      ) : (
+        ""
+      )}
+      <div className="countries-list">
+        {countries.map(({ name, id }) => {
+          return <p onClick={() => setSelectedCountryId(id)}>{name}</p>;
+        })}
+      </div>
     </div>
   );
 }

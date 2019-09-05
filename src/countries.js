@@ -9,11 +9,6 @@ export default [{
         color: 'red'
     },
     {
-        name: "Wyspy Alandzkie",
-        id: "ax",
-        color: 'yellow'
-    },
-    {
         name: "Albania",
         id: "al",
         color: 'yellow'
